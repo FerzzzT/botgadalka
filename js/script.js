@@ -126,7 +126,7 @@ if (!cardsContainer) {
             <div class="card-placeholder" style="background-image: url('${imagePath}')"></div>`;
 
         card.addEventListener("click", function () {
-            if (!selectedCards.includes(this) && selectedCards.length < 1) {
+            if (!selectedCards.includes(this) && selectedCards.length < 3) {
                 selectedCards.push(this);
                 selectedCardNames.push(cardName);
                 this.classList.add("flipped", "selected");
